@@ -1,13 +1,11 @@
 # JsonStreaming
 
-Streaming JSON array deserialization for ASP.NET Core helper using System.IO.Pipelines. Designed with Native AOT compatibility in mind.
-
 [![NuGet](https://img.shields.io/nuget/v/JsonStreaming.svg)](https://www.nuget.org/packages/JsonStreaming/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## Features
-
-###    
+JsonStreaming provides automatic parameter binding for ASP.NET Core Minimal APIs that eliminates the need to manually parse HTTP request bodies with arrays into IAsyncEnumerable
+sequences,
+whilst also still letting the user control the binding for advanced use cases.
 
 ## Installation
 
@@ -130,16 +128,16 @@ Example request body:
 
 ```json
 [
-  {
-    "id": 1,
-    "name": "First Item",
-    "value": 10.5
-  },
-  {
-    "id": 2,
-    "name": "Second Item",
-    "value": 20.5
-  }
+    {
+        "id": 1,
+        "name": "First Item",
+        "value": 10.5
+    },
+    {
+        "id": 2,
+        "name": "Second Item",
+        "value": 20.5
+    }
 ]
 ```
 
